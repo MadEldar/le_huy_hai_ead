@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Candidate list</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h4 class="col-4 my-3">Create candidate</h4>
+        <div class="col-2 offset-6 my-3"><a class="btn btn-primary" href="/">Back to list</a></div>
+        <form class="col-6 offset-3" method="post" action="/create">
+            <div class="form-group">
+                <label for="name">Candidate name</label>
+                <input class="form-control" id="name" name="name" type="text" placeholder="Candidate name">
+            </div>
+            <div class="form-group">
+                <label for="address">Candidate address</label>
+                <input class="form-control" id="address" name="address" type="text" placeholder="Candidate address">
+            </div>
+            <div class="form-group">
+                <label for="phone">Candidate phone</label>
+                <input class="form-control" id="phone" name="phone" type="text" placeholder="Candidate phone">
+            </div>
+            <div class="form-group">
+                <label for="dob">Candidate dobdate of birth</label>
+                <input class="form-control" id="dob" name="dob" type="text" placeholder="Candidate date of birth">
+            </div>
+            <div class="form-group">
+                <label for="jobs">Candidate jobs</label>
+                <input class="form-control" id="jobs" name="jobs" type="text" placeholder="Candidate jobs">
+            </div>
+            <div class="form-group">
+                <label for="skills">Candidate skills</label>
+                <input class="form-control" id="skills" name="skills" type="text" placeholder="Candidate skills">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-light">Reset form</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
